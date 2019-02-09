@@ -74,6 +74,7 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
+        exit(var_dump("edit"));
         $task = Task::find($id);
 
         return view('tasks.edit', [
