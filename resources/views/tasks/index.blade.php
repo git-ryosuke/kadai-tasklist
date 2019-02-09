@@ -4,7 +4,7 @@
 
     <h1>メッセージ一覧</h1>
 
-    @if (count($messages) > 0)
+    @if (count($tasks) > 0)
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -13,10 +13,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($messages as $message)
+                @foreach ($tasks as $task)
                 <tr>
-                    <td>{{ $message->id }}</td>
-                    <td>{{ $message->content }}</td>
+                    <td>{{ $task->id }}</td>
+                    <td>{{ $task->content }}</td>
                 </tr>
                 @endforeach
             </tbody>
